@@ -1,10 +1,13 @@
+import time
+
 import duckdb as db
 
 from logger import logger
-import time
 
 
 class Solution(object):
+    """Решение задачи с помощью библиотеки DuckDB"""
+
     @staticmethod
     def solve():
         request = db.sql(
